@@ -1,6 +1,10 @@
 name: 01 - Building Blocks
 
-on: push
+on: 
+  push:
+  pull_request:
+  schedule:
+    - cron: '*/5 * * * *'
 
 jobs:
   echo-hello:
